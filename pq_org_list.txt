@@ -1,0 +1,6 @@
+let
+    Source = Excel.CurrentWorkbook(){[Name="Table1"]}[Content],
+    #"Changed Type" = Table.Group(#"Source", {"ADM2_PCODE", "Sector"},{{"Organisation", each Text.Combine(List.Distinct([Organisation]), ", "), type text}}),
+    #"Pivoted Column" = Table.Pivot(#"Changed Type", List.Distinct(#"Changed Type"[Sector]), "Sector", "Organisation")
+in
+    #"Pivoted Column"
