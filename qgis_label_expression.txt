@@ -1,28 +1,31 @@
 if( "Grand Total" is not null,
-'<b>'||  "ADM2_EN" ||' </b>'||
+'<b>'||  "ADM2_EN" ||'</b>'||
 '<p>'||
-IF ("Agriculture" > 0,'<span style="font-family: Humanitarian-Icons">&#59655; </span> '||" Agriculture" || ' '||  "o_Agriculture" ||  '<p>','')
+IF ("Agriculture" > 0,'<span style=”font-family: Humanitarian-Icons”>&#59655;</span> '||"Agriculture"  || ' '||  "o_Agriculture" ||  '<p>','')
 ||
-IF ("Coordination" > 0,'<span style="font-family: Humanitarian-Icons">&#59717; </span> '||" Coordination" || ' '|| "o_Coordination" || '<p>','')
+IF ("Coordination" > 0,'<span style=”font-family: Humanitarian-Icons”>&#59717;</span> '||"Coordination" || ' '|| "o_Coordination" || '<p>','')
 ||
-IF ("Education" > 0,'<span style="font-family: Humanitarian-Icons">&#59741; </span> '||" Education" || ' '||  "o_Education" ||' <p>','')
+IF ("Education" > 0,'<span style=”font-family: Humanitarian-Icons”>&#59741;</span> '||"Education"  || ' '||  "o_Education" ||'<p>','')
 ||
 
-IF ( "Habitat" > 0, '<span style="font-family: Humanitarian-Icons">&#59949; </span> '|| "Habitat" || ' '||  "o_Habitat" ||' <p>','')
+IF ( "Habitat"  > 0, '<span style=”font-family: Humanitarian-Icons”>&#59949;</span> '|| "Habitat" || ' '||  "o_Habitat"  ||'<p>','')
 ||
-IF ("Logistics" > 0,'<span style="font-family: Humanitarian-Icons">&#59830; </span> '||" Logistics" || ' '||  "o_Logistique" ||' <p>','')
+IF ("Logistique" > 0,'<span style=”font-family: Humanitarian-Icons”>&#59830;</span> '||"Logistique" || ' '||  "o_Logistique"  ||'<p>','')
 ||
-IF ("Nutrition" > 0,'<span style="font-family: Humanitarian-Icons">&#59861; </span> '||" Nutrition" || ' '||  "o_Nutrition" ||' <p>','')
+IF ("Nutrition" > 0,'<span style=”font-family: Humanitarian-Icons”>&#59861;</span> '||"Nutrition"  || ' '||  "o_Nutrition" ||'<p>','')
 ||
-IF ("Protection" > 0,'<span style="font-family: Humanitarian-Icons">&#59898; </span> '||" Protection" || ' '||  "o_Protection" ||' <p>','')
+IF ("Protection" > 0,'<span style=”font-family: Humanitarian-Icons”>&#59898;</span> '||"Protection" || ' '||  "o_Protection"  ||'<p>','')
 ||
-IF ("Santé" > 0,'<span style="font-family: Humanitarian-Icons">&#59777; </span> '||" Health" || ' '||  "o_Sante" ||' <p>','')
+IF ("Sante" > 0,'<span style=”font-family: Humanitarian-Icons”>&#59777;</span> '||"Sante"  || ' '||  "o_Sante" ||'<p>','')
 ||
-IF ("Food Safety" > 0,'<span style="font-family: Humanitarian-Icons">&#59763; </span> '||" Food Security" || ' '||  "Food o_Securite" ||' <p>','')
+IF ("Securite Alimentaire" > 0,'<span style=”font-family: Humanitarian-Icons”>&#59763;</span> '||"Securite Alimentaire"  || ' '||  "o_Securite Alimentaire" ||'<p>','')
 ||
-IF ("WASH" > 0,'<span style="font-family: Humanitarian-Icons"><001; </span> '||" WASH" || ' '||  "o_WASH" ||' <p>','')
+IF ("WASH" > 0,'<span style=”font-family: Humanitarian-Icons”>&#60001;</span> '||"WASH"  || ' '||  "o_WASH" ||'<p>','')
 ||
-IF ( "Other" > 0, 'Other ' || "Other" || ' '||  "o_Autres" ||' <p>','')
+IF ( "Autres"  > 0, 'Autres ' || "Autres"  || ' '||  "o_Autres" ||'<p>','')
 ||
-IF ( "Not defined" > 0, 'Not defined ' || "Not defined" || ' '||  "o_not defined" ||' <p>','')
-, '')
+IF ( "Not defined"  > 0, 'Non défini ' || "Not defined"  || ' '||  "o_not defined" ||'<p>',''), '')
+
+
+
+
